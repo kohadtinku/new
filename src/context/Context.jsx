@@ -12,7 +12,7 @@ const MovieProvider = ({ children }) => {
     setError("");
     try {
       const response = await axios.get(
-        `http://www.omdbapi.com/?apikey=a78caf25&s=${searchTerm}`
+        `https://www.omdbapi.com/?apikey=a78caf25&s=${searchTerm}`
     
       );
       if (response.data.Response === "True") {
