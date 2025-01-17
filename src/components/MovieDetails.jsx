@@ -14,7 +14,7 @@ const MovieDetails = () => {
       setError("");
       try {
         const res = await axios.get(
-          `http://www.omdbapi.com/?apikey=a78caf25&i=${id}`
+          `https://www.omdbapi.com/?apikey=a78caf25&i=${id}`
         );
         if (res.data.Response === "True") {
           setMovies(res.data);
